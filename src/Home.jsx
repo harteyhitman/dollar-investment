@@ -15,6 +15,8 @@ import MinWeb from "./MinWeb";
 import Footer from "./Footer";
 import {footerList} from "./Data"
 import Button from './Button'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -31,8 +33,9 @@ function Home() {
             paragraph="We put your money in high quality assets that help you build wealth and achieve your financial goals."
 
           />
-          <Button homebutton1="Download App"/>
-          <Button homebutton2="Sign up" />
+          <Link to="/Form"><Button homebutton1="Download App"/>
+          <Button   homebutton2="Sign up" /></Link>
+          
         </div>
         <div>
           <img

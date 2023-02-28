@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Button from './Button'
 
 function Navbar(props) {
@@ -14,7 +15,7 @@ function Navbar(props) {
           <li>{props.blog}</li>
           <li>{props.sign}</li>
         </ul>
-        <Button text='sign up'/>
+        <Link to="/Form"><Button  text='sign up'/></Link>
     </nav>
   )
 }
