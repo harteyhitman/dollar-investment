@@ -21,7 +21,7 @@ nav li:hover{
   color: green;
 }
 .container{
-  width: 90%;
+  width: 100%;
   margin: 0px auto;
 }
 .burger-icon{
@@ -223,8 +223,11 @@ button:hover{
 }
 .use-rise-conntainer {
   display: flex;
-  gap: 20px;
-  /* justify-content: space-between; */
+  width: 100%;
+  gap: 10px;
+  margin: 0px auto;
+  /* padding: 0 -30px; */
+  justify-content: center;
 }
 .testimony{
   display: flex;
@@ -344,7 +347,9 @@ form {
     color: white;
     font-weight: 300;
   }
-  
+  .form-cover{
+    background-color: #A0DDE2;
+  }
   form button {
     appearance: none;
     outline: 0;
@@ -363,6 +368,7 @@ form {
     background: #50a3a2;
     padding: 1px;
     width: 100%;
+    height: 100%;
 }
 .starter{
     text-align: center;
@@ -381,7 +387,7 @@ form {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
   }
   nav{
     display: flex;
