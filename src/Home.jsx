@@ -33,11 +33,11 @@ function Home() {
             paragraph="We put your money in high quality assets that help you build wealth and achieve your financial goals."
 
           />
-          <Link to="/Form"><Button homebutton1="Download App"/>
-          <Button   homebutton2="Sign up" /></Link>
+         <div className="up-button"> <Link to="/Form"><Button homebutton1="Download App"/>
+          <Button   homebutton2="Sign up" /></Link></div>
           
         </div>
-        <div>
+        <div className="risevest-img">
           <img
             src="https://risevest.com/_next/static/media/rise-app-phone.c7dc0912.webp"
             alt=""
@@ -46,8 +46,10 @@ function Home() {
       </div>
         <div className="second-slide">
           {images.map((image, i)=>(
-              <img key={i} src={image.techstars} alt="" />
-          ))}
+<div className="second-slide-img" key={i}>
+<img  src={image.techstars} alt="" />
+
+</div>          ))}
         </div>
         {displayItems.map((displayitem)=>(
             <TextAndImages 
