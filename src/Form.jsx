@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 function Form(props) {
   return (
@@ -15,9 +16,9 @@ function Form(props) {
             <input type="password" placeholder="Confirm Password" /> 
           )} 
 
-          <button type="submit">
+<Link to="/"> <button type="submit"> 
             {props.isRegistered ? "Login" : "Register"}
-          </button>
+          </button></Link>
         </form>
       </div>
     </div>
